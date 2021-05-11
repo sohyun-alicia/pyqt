@@ -10,10 +10,10 @@ class ChartWidget(QWidget):
         uic.loadUi("chart.ui", self)
         self.ticker = ticker
 
-# if __name__ == "__main__":
-import sys
-from PyQt5.QtWidgets import QApplication
-app = QApplication(sys.argv)
-cw = ChartWidget()
-cw.show()
-exit(app.exec_())
+if __name__ == "__main__":
+    import sys
+    from PyQt5.QtWidgets import QApplication
+    app = QApplication(sys.argv)
+    cw = ChartWidget()
+    cw.show()
+    exit(app.exec_())
